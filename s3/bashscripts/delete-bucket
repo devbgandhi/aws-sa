@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Deleting S3 bucket: $1"
+aws s3api delete-bucket --bucket "$1" --region "us-west-2"
